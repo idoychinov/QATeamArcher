@@ -1,0 +1,128 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>_uimap.sikuli</h2> <a href="_uimap.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt">########################################################</span>
+<span class="cmt"># UI map for XYZ</span>
+<span class="cmt">########################################################</span>
+<span class="kw">from</span> sikuli <span class="kw">import</span> *
+<span class="cmt">########################################################</span>
+
+<span class="kw">class</span> Tils:
+    academy_logo = <img src="academy_logo.png" />
+<span class="kw">class</span> Login:
+    label=<img src="1453418625552.png" />
+    username = <img src="username.png" />
+    password = <img src="password.png" />
+    submit = <img src="submit.png" />
+    verify = <img src="verify.png" />
+<span class="kw">class</span> Admin:
+    navigation_label = <img src="navigation_label.png" />
+    homeworkEvaluationLabel = <img src="homeworkEvaluationLabel.png" />
+
+<span class="kw">class</span> HomeworkEvaluation:
+    dropDownArrow = <img src="dropDownArrow.png" />
+    courseInput = <img src="courseInput.png" />
+    courseSelection = <img src="courseSelection.png" />
+    lectureInput  = <img src="1453421073065.png" />
+    lectureSelection =Pattern(<img src="1453450403854.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">21</span>)
+
+    userInput = <img src="userInput.png" />
+    evaluatedFrom = <img src="evaluatedFrom.png" />
+    exportToExcelButton = <img src="exportToExcelButton.png" />
+    backToAdminButton = <img src="backToAdminButton.png" />
+    excelFileChrome = <img src="excelFileChrome.png" />
+    excelValidadion = <img src="excelValidadion.png" />
+    excelDataValidation = <img src="excelValidation.png" />
+
+<span class="kw">class</span> ImportTeamsPage:
+    teamwork_dropdown = <img src="teamwork_dropdown.png" />
+    select_teamworkO = <img src="select_teamworkO.png" />
+    select_TeamworkP = <img src="select_TeamworkP.png" />
+    set_number_users = Pattern(<img src="set_number_users.png" />).targetOffset(<span class="dig">90</span>,<span class="dig">0</span>)
+    select_teamname = Pattern(<img src="select_teamname.png" />).similar(<span class="dig">0.89</span>)
+    set_teamname = Pattern(<img src="set_teamname.png" />).similar(<span class="dig">0.88</span>)
+    wheel_target = Pattern(<img src="wheel_target.png" />).similar(<span class="dig">0.75</span>)
+    select_files = <img src="select_files.png" />
+    file_name = <img src="file_name.png" />
+    open_button = <img src="open_button.png" />
+    exist_importedFile = <img src="exist_importedFile.png" />
+    column_toSort = Pattern(<img src="column_toSort.png" />).targetOffset(<span class="dig">70</span>,<span class="dig">0</span>)
+    select_column_toSort = Pattern(<img src="select_column_toSort.png" />).similar(<span class="dig">0.88</span>)
+    import_button = <img src="import_button.png" />
+    chose_teamworkMessage = Pattern(<img src="chose_teamworkMessage.png" />).exact()
+    chose_numberOfUSersMessage = <img src="chose_numberOfUSersMessage.png" />
+    chose_teamworkNames = <img src="chose_teamworkNames.png" />
+    chose_fileToImportMessage = <img src="chose_fileToImportMessage.png" />
+    invalid_importFileMessage = <img src="invalid_importFileMessage.png" />
+</pre>
+</body>
+</html>
