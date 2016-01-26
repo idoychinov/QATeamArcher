@@ -13,13 +13,6 @@ def RunBrowserToUrl(browser,toUrl):
     type(toUrl); sleep(1)
     type(Key.ENTER)
 
-def RunBrowser(browser, url):
-    sleep(0.5)
-    type("d",KEY_WIN); sleep(1)
-    type("r", KEY_WIN); sleep(1)
-    type(browser+" "); sleep(1)
-    type(url); sleep(1)
-    type(Key.ENTER)
 
 def LoginUser(username,password):
 	if exists(LoginPage.button_logout):
