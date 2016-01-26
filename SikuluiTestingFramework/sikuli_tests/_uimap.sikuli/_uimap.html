@@ -126,9 +126,10 @@
     asert_bug_message = <img src="asert_bug_message.png" />
 
 <span class="kw">class</span> LoginPage:
-        button_enter = <img src="button_enter.png" />
+        button_enter = Pattern(<img src="button_enter.png" />).targetOffset(-<span class="dig">40</span>,<span class="dig">0</span>)
         button_login = <img src="button_login.png" />
-        button_logout=<img src="button_logout.png" />
+        button_logout=Pattern(<img src="button_logout.png" />).similar(<span class="dig">0.84</span>)
+        wait_label = <img src="wait_label.png" />
         input_username = <img src="input_username.png" />
         input_password = <img src="input_password.png" />
 
@@ -143,6 +144,9 @@
         button_all_evals = <img src="button_all_evals.png" />
         button_accept_evals = <img src="button_accept_evals.png" />
         button_reject_evals = <img src="button_reject_evals.png" />
+
+<span class="kw">class</span> TeamworkPageClass:
+    teamwork_wait_element = <img src="teamwork_wait_element.png" />
 </pre>
 </body>
 </html>

@@ -15,32 +15,30 @@ def RunBrowserToUrl(browser,toUrl):
 
 
 def LoginUser(username,password):
-	if exists(LoginPage.button_logout):
-		click(LoginPage.button_logout)
-		wait(LoginPage.button_enter,10)
-	
 	click(LoginPage.button_enter)
-	wait(LoginPage.button_login)
+	wait(LoginPage.wait_label, 15)
 	click(LoginPage.input_username)
 	type(username)
-	click(LoginPage.input_password)
+	type(Key.TAB)
 	type(password)
 	click(LoginPage.button_login)
 	wait(LoginPage.button_logout)
 
-def ChangeUrl(url):
+def ChangeUrl(url, element):
 	type("l",KeyModifier.CTRL)
 	type(url)
 	type(Key.ENTER)
+	wait(element, 10)
 	
 def CloseBrowser():
 	type(Key.F4,KeyModifier.ALT )
 
-def LoginAsAdmin(user,password):
+def LoginAsAdmin(username,password):
+    click(LoginPage.button_enter)
     wait(Login.label,5)
     click(Login.label)
     wait(Login.username)
-    type(Login.username,user)
+    type(Login.username,username)
     type(Login.password,password)
     click(Login.submit)
     wait(Login.verify)
@@ -50,7 +48,7 @@ def NavigateToAdminModule(module):
     click(Admin.navigation_label)
     wait(4)
     wheel(WHEEL_DOWN, 7)
-    wait(Admin.homeworkEvaluationLabel,5)
+    wait(module,5)
     click(module); sleep(3)
 
 class HER_helpers(object):

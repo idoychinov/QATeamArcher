@@ -54,9 +54,10 @@ class ImportTeamsPage:
     asert_bug_message = "asert_bug_message.png"
 	
 class LoginPage:
-	button_enter = "button_enter.png"
+	button_enter = Pattern("button_enter.png").targetOffset(-40,0)
 	button_login = "button_login.png"
-	button_logout="button_logout.png"
+	button_logout=Pattern("button_logout.png").similar(0.84)
+	wait_label = "wait_label.png"
 	input_username = "input_username.png"
 	input_password = "input_password.png"
 	
@@ -71,4 +72,7 @@ class HER:
 	button_all_evals = "button_all_evals.png"
 	button_accept_evals = "button_accept_evals.png"
 	button_reject_evals = "button_reject_evals.png"
+
+class TeamworkPageClass:
+    teamwork_wait_element = "teamwork_wait_element.png"
 	

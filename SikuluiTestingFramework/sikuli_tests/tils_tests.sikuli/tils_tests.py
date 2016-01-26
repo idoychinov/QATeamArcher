@@ -8,7 +8,7 @@ class TilsTests(unittest.TestCase):
     
     def test_001_HomeworkEvaluationDownloadCorrectData_Ilia(self):
        RunBrowserToUrl("chrome","http://stage.telerikacademy.com")
-       LoginAsAdmin("myadmin2", "mypassword2")
+       LoginUser("myadmin2", "mypassword2")
        NavigateToAdminModule(Admin.homeworkEvaluationLabel)
        click(find(HomeworkEvaluation.courseInput).right().find(HomeworkEvaluation.dropDownArrow))
        click(HomeworkEvaluation.courseSelection)
