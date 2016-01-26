@@ -51,6 +51,7 @@ class ImportTeamsPage:
     chose_teamworkNames = "chose_teamworkNames.png"
     chose_fileToImportMessage = "chose_fileToImportMessage.png"
     invalid_importFileMessage = "invalid_importFileMessage.png"
+    asert_bug_message = "asert_bug_message.png"
 	
 class LoginPage:
 	button_enter = "button_enter.png"
