@@ -64,6 +64,7 @@
     <None Include="ExamRegistering\Load\ExamRegistering2.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+<<<<<<< HEAD
     <None Include="ExamResultCheck\LoadTest1.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -75,6 +76,13 @@
     </None>
     <None Include="ExamResultCheck\LoginAndCheckResult.webtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+=======
+    <None Include="Teamwork\Load\LoadTest1.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Teamwork\Performance\OpenTeamworkPage.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+>>>>>>> 6b07c77dcb8cec8d52be4ac87b17cff7184e4497
     </None>
     <None Include="UploadHomework\Load\UploadHW100Users.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -92,6 +100,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="HomeworkComments\Performance\OtherStudentsComments.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Users.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

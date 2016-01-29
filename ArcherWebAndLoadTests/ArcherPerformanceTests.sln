@@ -6,10 +6,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E0ECE65B-D1D3-4A4A-B4E5-73CC4F0B5BDE}"
 	ProjectSection(SolutionItems) = preProject
 		ArcherPerformanceTests.vsmdi = ArcherPerformanceTests.vsmdi
-		ExamRegistering.testsettings = ExamRegistering.testsettings
 		Local.testsettings = Local.testsettings
-		OtherStudentsComments.testsettings = OtherStudentsComments.testsettings
-		UploadHW.testsettings = UploadHW.testsettings
 	EndProjectSection
 EndProject
 Global
