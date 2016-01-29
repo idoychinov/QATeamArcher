@@ -33,16 +33,6 @@ def ChangeUrl(url, element):
 def CloseBrowser():
 	type(Key.F4,KeyModifier.ALT )
 
-def LoginAsAdmin(username,password):
-    click(LoginPage.button_enter)
-    wait(Login.label,5)
-    click(Login.label)
-    wait(Login.username)
-    type(Login.username,username)
-    type(Login.password,password)
-    click(Login.submit)
-    wait(Login.verify)
-
 def NavigateToAdminModule(module):
     wait(Admin.navigation_label,5)
     click(Admin.navigation_label)

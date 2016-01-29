@@ -6,19 +6,6 @@ from _lib import *
     
 class TilsTests(unittest.TestCase):
     
-    def test_001_HomeworkEvaluationDownloadCorrectData_Ilia(self):
-       RunBrowserToUrl("chrome","http://stage.telerikacademy.com")
-       LoginUser("myadmin2", "mypassword2")
-       NavigateToAdminModule(Admin.homeworkEvaluationLabel)
-       click(find(HomeworkEvaluation.courseInput).right().find(HomeworkEvaluation.dropDownArrow))
-       click(HomeworkEvaluation.courseSelection)
-       click(find(HomeworkEvaluation.lectureInput).right().find(HomeworkEvaluation.dropDownArrow))
-       click(HomeworkEvaluation.lectureSelection)
-       type(HomeworkEvaluation.userInput,"ivand"+Key.ENTER); sleep(2)
-       click(HomeworkEvaluation.exportToExcelButton)
-       click(find(HomeworkEvaluation.excelFileChrome))
-       wait(HomeworkEvaluation.excelValidadion,10)
-       wait(HomeworkEvaluation.excelDataValidation,10)
 
     def test_100_Edit_BonusPointsEditSuccessId212(self):
         RunBrowserToUrl("iexplore","http://stage.telerikacademy.com/Administration_Courses/UsersInCoursesBonuses");sleep(5)
