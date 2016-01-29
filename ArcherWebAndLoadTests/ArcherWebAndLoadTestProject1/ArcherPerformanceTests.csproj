@@ -64,6 +64,18 @@
     <None Include="ExamRegistering\Load\ExamRegistering2.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="ExamResultCheck\LoadTest1.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExamResultCheck\LoadTest100.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExamResultCheck\LoadTest25.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExamResultCheck\LoginAndCheckResult.webtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="UploadHomework\Load\UploadHW100Users.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
