@@ -64,6 +64,9 @@
     <None Include="ExamRegistering\Load\ExamRegistering2.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Teamwork\Load\LoadTest1.loadtest">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Teamwork\Performance\OpenTeamworkPage.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
