@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="UploadHW" Id="ab709471-4294-4b89-911d-40be473127f9" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="" StopOnError="False" RecordedResultFile="UploadHW.1b1c3f19-b59c-485d-9ac7-8a61949651a5.rec.webtestresult">
+  <Items>
+    <Request Method="GET" Guid="273b8172-290d-4631-bf34-9d4ed63b2792" Version="1.1" Url="http://stage.telerikacademy.com/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="8d6d4a86-6a3e-4d17-b5c1-40bfd8b3d921" Version="1.1" Url="http://stage.telerikacademy.com/Users/Auth/Login" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="POST" Guid="d64a4f39-541b-4eb1-94da-4838dbcaf235" Version="1.1" Url="http://stage.telerikacademy.com/Users/Auth/Login" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://stage.telerikacademy.com/" ReportingName="">
+      <FormPostHttpBody>
+        <FormPostParameter Name="UsernameOrEmail" Value="myusername7" RecordedValue="myusername7" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="mypassword7" RecordedValue="mypassword7" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="9b446393-685b-48fa-b41b-f8b96fc2c261" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Courses/Details/265" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="4fd75ea0-ba43-422d-ac85-2d97276348d8" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Ajax/LecturerCourses" ThinkTime="9" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="d4efe9a0-14ce-4db1-b070-2fbd190d6ee9" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Homework/Submit/56" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="38a5bfab-e5dd-43c7-ab60-b1cbed5a49c7" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Courses/Details/265" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="77e6bf99-6658-429c-9cdd-6ea4041027b2" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Ajax/LecturerCourses" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="ee31c541-0993-4331-a300-3ef1cadc8326" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Homework/Submit/56" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="45e46fe3-52d0-4395-9df2-4b5f996eca35" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Courses/Details/265" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="">
+      <DependentRequests>
+        <Request Method="GET" Guid="88183e26-9e84-412b-b856-db0f5ffcfda1" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Ajax/LecturerCourses" ThinkTime="8" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="7ce1517b-de1c-4351-8a5e-59383a883c02" Version="1.1" Url="http://stage.telerikacademy.com/Courses/Homework/Submit/56" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" />
+    <Request Method="GET" Guid="990e1f49-4ec2-497a-bf62-aa67b56a408c" Version="1.1" Url="http://stage.telerikacademy.com/Users/Auth/LogOut" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://stage.telerikacademy.com/" ReportingName="" />
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
