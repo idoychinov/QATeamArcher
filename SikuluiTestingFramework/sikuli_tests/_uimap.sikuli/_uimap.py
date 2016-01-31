@@ -76,3 +76,10 @@ class HER:
 class TeamworkPageClass:
     teamwork_wait_element = "teamwork_wait_element.png"
 	
+class BonusPointsPage:
+    btn_FirstEditBonus = "velizar_btn_FirstEdit_Bonus.png"
+    form_BonusEdit2 = "velizar_form_BonusEdit2.png"
+    label_Points = "velizar_label_Points.png"
+    btn_Update_BonusPoints = "velizar_btn_Update_BonusPoints.png"
+    label_Edited = "velizar_label_Edited.png"
+    label_777 = "velizar_label_777.png"
