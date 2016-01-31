@@ -83,3 +83,4 @@ class BonusPointsPage:
     btn_Update_BonusPoints = "velizar_btn_Update_BonusPoints.png"
     label_Edited = "velizar_label_Edited.png"
     label_777 = "velizar_label_777.png"
+    dropDownArrow = "velizar_dropDownArrow_EditingBonusPoins.png"
