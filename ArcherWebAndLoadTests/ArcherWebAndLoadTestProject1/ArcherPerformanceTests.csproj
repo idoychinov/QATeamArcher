@@ -61,6 +61,9 @@
     <None Include="AdminWebTests\AdminModulesWebTests\StudentsRecords.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\ExportResults.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="ExamRegistering\Performance\ExamRegistering1.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
