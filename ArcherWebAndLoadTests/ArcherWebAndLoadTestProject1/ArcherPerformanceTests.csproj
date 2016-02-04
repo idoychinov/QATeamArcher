@@ -55,6 +55,9 @@
     <None Include="AdminWebTests\AdminBaseTest.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\EvaluationGenerateProtocol.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="ExamRegistering\Performance\ExamRegistering1.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
