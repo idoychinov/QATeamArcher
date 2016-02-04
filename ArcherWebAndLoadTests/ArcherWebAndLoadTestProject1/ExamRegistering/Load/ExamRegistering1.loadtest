@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="ExamRegistering1" Description="" Owner="" storage="d:\qateamarcher\archerwebandloadtests\archerwebandloadtestproject1\examregistering1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="9df30691-0c05-4a24-93a8-2da983410e05" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="ExamRegistering1" Description="" Owner="" storage="d:\qateamarcher\archerwebandloadtests\archerwebandloadtestproject1\examregistering\load\examregistering1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="9df30691-0c05-4a24-93a8-2da983410e05" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="ExamRegistering" DelayBetweenIterations="1" PercentNewUsers="0" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
       <LoadProfile Pattern="Constant" InitialUsers="100" />
       <TestMix>
-        <TestProfile Name="ExamRegistering1" Path="examregistering1.webtest" Id="50d42f65-d831-4507-a80a-cff2b5d3d704" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestProfile Name="ExamRegistering1" Path="..\performance\examregistering1.webtest" Id="50d42f65-d831-4507-a80a-cff2b5d3d704" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
       <BrowserMix>
-        <BrowserProfile Percentage="25">
+        <BrowserProfile Percentage="68">
           <Browser Name="Chrome 2" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1;) AppleWebKit/530.1 (KHTML, like Gecko) Chrome/2.0.169.1 Safari/530.1" />
@@ -19,7 +19,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="25">
+        <BrowserProfile Percentage="8">
           <Browser Name="Internet Explorer 10.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)" />
@@ -29,7 +29,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="25">
+        <BrowserProfile Percentage="19">
           <Browser Name="Firefox 3.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1) Gecko/20061010 Firefox/3.0" />
@@ -40,7 +40,7 @@
             </Headers>
           </Browser>
         </BrowserProfile>
-        <BrowserProfile Percentage="25">
+        <BrowserProfile Percentage="5">
           <Browser Name="Internet Explorer 9.0" MaxConnections="6">
             <Headers>
               <Header Name="User-Agent" Value="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)" />
