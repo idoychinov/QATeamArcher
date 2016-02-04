@@ -88,6 +88,21 @@
     <None Include="AdminWebTests\AdminModulesWebTests\TeamworkTeamMemberSuggestions.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\TeamworkImportTeams.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\TeamworkTeamNameSuggestions.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\TeamworkImportTeamNameSuggestions.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\TeamworkTeamMemberEvaluations.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\TeamworkTeamMemberAllEvaluations.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="ExamRegistering\Performance\ExamRegistering1.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

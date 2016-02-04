@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="TeamworkTeamNameSuggestions" Id="27b0ed82-2937-4770-a02e-f8bcb0f4482e" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.35321aa4-65d0-40f4-b64a-16f5a25e8370.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <IncludedWebTest Name="AdminBaseTest" Path="..\adminbasetest.webtest" Id="809dd64d-ad58-4c0d-b7ed-ada2896e0ae9" IsCodedWebTest="False" InheritWebTestSettings="False" />
+    <Request Method="GET" Guid="e9e4dfbb-84c6-4a1d-9cdd-54ca99044f84" Version="1.1" Url="http://stage.telerikacademy.com/Administration/Navigation" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="Admin pannel" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="1c035561-c64b-4a5e-8e80-f7510bfeb062" Version="1.1" Url="http://stage.telerikacademy.com/fonts/glyphicons-halflings-regular.eot" ThinkTime="7" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration/Navigation" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="d7b1d858-7965-4569-a1bd-cd582ab81b72" Version="1.1" Url="http://stage.telerikacademy.com/Administration_Teamwork/TeamNameSuggestions" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="Teamwork team name suggestions page" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="be898975-f53c-4782-a95e-b4eeb69b4b87" Version="1.1" Url="http://stage.telerikacademy.com/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration_Teamwork/TeamNameSuggestions" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="266b17fc-5f58-4616-a8d8-34a59e87f51e" Version="1.1" Url="http://stage.telerikacademy.com/Administration_Teamwork/TeamNameSuggestions/TeamNameSuggestionTypesRead/" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration_Teamwork/TeamNameSuggestions" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="sort" Value="TeamNameSuggestionTypeId-desc" RecordedValue="TeamNameSuggestionTypeId-desc" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="page" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam1.page}}" UrlEncode="True" />
+            <FormPostParameter Name="pageSize" Value="25" RecordedValue="25" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="group" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="filter" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration/Navigation" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.page" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="dex=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; dat" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
