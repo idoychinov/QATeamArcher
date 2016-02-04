@@ -76,6 +76,9 @@
     <None Include="AdminWebTests\AdminModulesWebTests\HomeworkStatistics.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="AdminWebTests\AdminModulesWebTests\HomeworkEvaluationReactions.webtest">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="ExamRegistering\Performance\ExamRegistering1.webtest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

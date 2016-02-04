@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="HomeworkEvaluationReactions" Id="c62dad54-f56d-4969-a253-8d50566245e9" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.4863533d-bb21-4a5d-9fa1-9bc35336db7e.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <IncludedWebTest Name="AdminBaseTest" Path="..\adminbasetest.webtest" Id="809dd64d-ad58-4c0d-b7ed-ada2896e0ae9" IsCodedWebTest="False" InheritWebTestSettings="False" />
+    <Request Method="GET" Guid="281b12f8-0049-4a99-97dc-cdefcf077ccb" Version="1.1" Url="http://stage.telerikacademy.com/Administration/Navigation" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="Admin pannel" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="eab1e4a3-947c-46b1-a633-a1afe80484d2" Version="1.1" Url="http://stage.telerikacademy.com/fonts/glyphicons-halflings-regular.eot" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration/Navigation" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="0687afce-46f9-4b5d-b729-78e25c063e7d" Version="1.1" Url="http://stage.telerikacademy.com/Administration_Courses/HomeworkEvaluationReactions" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="Homework evaluation reactions page" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="963e6951-3aa2-4da7-9d96-108d38ab07f3" Version="1.1" Url="http://stage.telerikacademy.com/fonts/glyphicons-halflings-regular.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration_Courses/HomeworkEvaluationReactions" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="efe34d6b-a332-419b-bfa2-f3364fa8624b" Version="1.1" Url="http://stage.telerikacademy.com/Administration_Courses/HomeworkEvaluationReactions/UsersReceivingReactionsRead" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration_Courses/HomeworkEvaluationReactions" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="sort" Value="AcceptedMinusRejected-asc" RecordedValue="AcceptedMinusRejected-asc" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="page" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam3.page}}" UrlEncode="True" />
+            <FormPostParameter Name="pageSize" Value="25" RecordedValue="25" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="group" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="filter" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+        <Request Method="POST" Guid="61b3b6cf-6b4c-439a-a480-c6656f08ac6f" Version="1.1" Url="http://stage.telerikacademy.com/Administration_Courses/HomeworkEvaluationReactions/UsersGivingReactionsRead" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="*/*" />
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration_Courses/HomeworkEvaluationReactions" />
+          </Headers>
+          <FormPostHttpBody>
+            <FormPostParameter Name="sort" Value="AcceptedMinusRejected-asc" RecordedValue="AcceptedMinusRejected-asc" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="page" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam4.page}}" UrlEncode="True" />
+            <FormPostParameter Name="pageSize" Value="25" RecordedValue="25" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="group" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="filter" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+          </FormPostHttpBody>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://stage.telerikacademy.com/Administration/Navigation" />
+      </Headers>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.page" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="dex=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; dat" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam4.page" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="dex=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; dat" />
+            <RuleParameter Name="Index" Value="1" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
