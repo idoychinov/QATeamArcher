@@ -68,7 +68,7 @@
     <None Include="ExamResultCheck\LoadTest100.loadtest" />
     <None Include="ExamResultCheck\LoadTest25.loadtest" />
     <None Include="ExamResultCheck\LoginAndCheckResult.webtest" />
-    <None Include="Teamwork\Load\LoadTest1.loadtest">
+    <None Include="Teamwork\Load\TeamworkPage.loadtest">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Teamwork\Performance\OpenTeamworkPage.webtest">
